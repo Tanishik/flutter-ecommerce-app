@@ -12,8 +12,8 @@ class _ProfilePageState extends State<ProfilePage> {
 
     showDialog(context: context, builder: (context){
       return AlertDialog(
-        backgroundColor: Colors.grey.shade900,
-        title: Center(child: Text('Are you sure ?',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white ),)),
+        backgroundColor: Colors.white,
+        title: Center(child: Text('Are you sure ?',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black ),)),
 
         actions: [
           Center(
@@ -25,7 +25,9 @@ class _ProfilePageState extends State<ProfilePage> {
                  MaterialButton(onPressed: (){
                   Navigator.pop(context);
                 },
-            child: Text('Cancel',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),),
+            child: Text('Cancel',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),),
+
+          
 
           
             
@@ -404,11 +406,11 @@ class _ProfilePageState extends State<ProfilePage> {
                                              mainAxisAlignment: MainAxisAlignment.start,
                              
                                              children: [
-                                                Icon(Icons.logout_outlined,),
+                                                Icon(Icons.logout_outlined,color: Colors.red),
                                                 const SizedBox(width: 30,),
-                                               Text("Log Out",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                                               Text("Log Out",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.red)),
                                                Spacer(),
-                                               Icon(Icons.arrow_forward_ios_sharp)
+                                              
                                               
                                              ],
                                              
