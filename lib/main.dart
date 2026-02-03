@@ -23,8 +23,8 @@ void main() {
       routes: {
         '/login':(context)=>const LoginPage(),
        
-        '/Home':(context)=> HomePage(),
-        '/intro':(context)=>IntroPage()
+        '/Home':(context)=>const HomePage(),
+        '/intro':(context)=>const IntroPage()
       },
     ),
      );
